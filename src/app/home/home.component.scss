@@ -1,0 +1,24 @@
+$background-dark: #9AC23B;
+$background-light: #BFCD31;
+$background-medium: #9AC13C;
+$background-grey: #666668;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    color:$background-grey;
+    min-height: 150px;
+}
+
+.bio-portal-avatar {
+  background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2016/5733573d86890.jpg");
+  background-size: cover;
+}
+.chem-portal-avatar {
+  background-image: url("http://www.chem-lab.be/WebObjects/ChemLabV2.woa/Contents/WebServerResources/catBG.png");
+  background-size: cover;
+}
